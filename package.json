@@ -1,0 +1,18 @@
+{
+  "name": "tstl_bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_lua": "tstl -p tsconfig.json --outDir dist_lua",
+    "build_js": "tsc -p tsconfig.json --outDir dist_js",
+    "run_js": "NODE_PATH=dist_js node dist_js/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript-to-lua": "^0.41.0",
+    "typescript": "^4.3.5"
+  }
+}
